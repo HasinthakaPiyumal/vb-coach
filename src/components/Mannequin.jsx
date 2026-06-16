@@ -149,6 +149,31 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
     if (isNaN(minY)) minY = -237.39
     const yOff = -minY * sf
     
+    // Measure and store foot and toe bone vertical offsets in bind pose (relative to minY)
+    if (!fbx.userData.bindFootOffsets) {
+      const leftFootBone = fbx.getObjectByName('mixamorigLeftFoot')
+      const rightFootBone = fbx.getObjectByName('mixamorigRightFoot')
+      const leftToeBone = fbx.getObjectByName('mixamorigLeftToeBase')
+      const rightToeBone = fbx.getObjectByName('mixamorigRightToeBase')
+
+      const leftFootPos = new THREE.Vector3()
+      const rightFootPos = new THREE.Vector3()
+      const leftToePos = new THREE.Vector3()
+      const rightToePos = new THREE.Vector3()
+
+      if (leftFootBone) leftFootBone.getWorldPosition(leftFootPos)
+      if (rightFootBone) rightFootBone.getWorldPosition(rightFootPos)
+      if (leftToeBone) leftToeBone.getWorldPosition(leftToePos)
+      if (rightToeBone) rightToeBone.getWorldPosition(rightToePos)
+
+      fbx.userData.bindFootOffsets = {
+        leftFoot: leftFootBone ? leftFootPos.y - minY : 17,
+        rightFoot: rightFootBone ? rightFootPos.y - minY : 17,
+        leftToe: leftToeBone ? leftToePos.y - minY : 17,
+        rightToe: rightToeBone ? rightToePos.y - minY : 17
+      }
+    }
+    
     // Restore transformations
     fbx.scale.copy(oldScale)
     fbx.position.copy(oldPos)
@@ -361,8 +386,8 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
     if (hipsBone) {
       if (activeAnimId === 'hip_circle') {
         const angle = (t / duration) * Math.PI * 2
-        const tiltX = Math.sin(angle) * 0.2
-        const tiltZ = Math.cos(angle) * 0.15
+        const tiltX = Math.sin(angle) * 0.35
+        const tiltZ = Math.cos(angle) * 0.28
         
         const defaultHipsRot = defaultRotations.current['mixamorigHips'] || new THREE.Euler()
         hipsBone.rotation.set(
@@ -372,8 +397,8 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
         )
         
         const defaultHipsPos = fbx.userData.defaultHipsPos || new THREE.Vector3(0, 90.72, 0)
-        const offsetX = Math.cos(angle) * 8
-        const offsetZ = Math.sin(angle) * 8
+        const offsetX = Math.cos(angle) * 14
+        const offsetZ = Math.sin(angle) * 14
         hipsBone.position.set(
           defaultHipsPos.x + offsetX,
           defaultHipsPos.y,
@@ -396,7 +421,7 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
         const spine = bones.spine
         if (spine) {
           const defS = defaultRotations.current[spine.name] || new THREE.Euler()
-          spine.rotation.set(defS.x - tiltX * 0.8, defS.y, defS.z - tiltZ * 0.8)
+          spine.rotation.set(defS.x - tiltX * 0.85, defS.y, defS.z - tiltZ * 0.85)
         }
       } else {
         if (fbx.userData.defaultHipsPos) {
@@ -410,8 +435,38 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
     // 6. Calculate root position and rotation in world coordinates
     const pos1 = k1.root || [0, 0, 0]
     const pos2 = k2.root || [0, 0, 0]
+
+    const isJump = 
+      activeAnimId.includes('jump') || 
+      activeAnimId.includes('hop') || 
+      activeAnimId.includes('bound') ||
+      activeAnimId.includes('drop') ||
+      activeAnimId.includes('approach') ||
+      activeAnimId.includes('burpee') ||
+      activeAnimId.includes('skater') ||
+      activeAnimId.includes('jack') ||
+      activeAnimId.includes('crossover') ||
+      activeAnimId.includes('slide_block')
+
+    // Apply physics-based easing for jump vertical translation to create natural hang-time
+    let alphaY = alpha
+    if (isJump) {
+      const y1 = pos1[1]
+      const y2 = pos2[1]
+      if (y1 <= 0.01 && y2 > 0.01) {
+        // Rising phase: ease out (slow down towards peak)
+        alphaY = Math.sin(alpha * Math.PI / 2)
+      } else if (y1 > 0.01 && y2 <= 0.01) {
+        // Falling phase: ease in (speed up as we land)
+        alphaY = 1 - Math.cos(alpha * Math.PI / 2)
+      } else if (y1 > 0.01 && y2 > 0.01) {
+        // Hovering at peak: smoothstep
+        alphaY = alpha * alpha * (3 - 2 * alpha)
+      }
+    }
+
     const px = THREE.MathUtils.lerp(pos1[0], pos2[0], alpha)
-    const py = THREE.MathUtils.lerp(pos1[1], pos2[1], alpha)
+    const py = THREE.MathUtils.lerp(pos1[1], pos2[1], alphaY)
     const pz = THREE.MathUtils.lerp(pos1[2], pos2[2], alpha)
 
     const rotHips1 = k1.joints.hips || [0, 0, 0]
@@ -427,11 +482,61 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
       outerGroupRef.current.rotation.set(rxHips, ryHips + Math.PI, rzHips)
 
       outerGroupRef.current.updateMatrixWorld(true)
-      const lowestY = findLowestSkinnedVertexY(fbx, groundVertexRef.current)
+
+      let lowestY = 0
+
+      const isFloorExercise = 
+        activeAnimId.includes('plank') ||
+        activeAnimId.includes('bridge') ||
+        activeAnimId.includes('pushup') ||
+        activeAnimId.includes('dead_bug') ||
+        activeAnimId.includes('crunch') ||
+        activeAnimId.includes('raises') ||
+        activeAnimId.includes('superman') ||
+        activeAnimId.includes('climbers') ||
+        activeAnimId.includes('taps') ||
+        activeAnimId.includes('cow') ||
+        activeAnimId.includes('child') ||
+        activeAnimId.includes('cobra') ||
+        activeAnimId.includes('pigeon') ||
+        activeAnimId.includes('glute_stretch') ||
+        activeAnimId.includes('seated_twist')
+
+      if (!isFloorExercise) {
+        const leftFootBone = fbx.getObjectByName('mixamorigLeftFoot')
+        const rightFootBone = fbx.getObjectByName('mixamorigRightFoot')
+        const leftToeBone = fbx.getObjectByName('mixamorigLeftToeBase')
+        const rightToeBone = fbx.getObjectByName('mixamorigRightToeBase')
+
+        const leftFootWorld = new THREE.Vector3()
+        const rightFootWorld = new THREE.Vector3()
+        const leftToeWorld = new THREE.Vector3()
+        const rightToeWorld = new THREE.Vector3()
+
+        if (leftFootBone) leftFootBone.getWorldPosition(leftFootWorld)
+        if (rightFootBone) rightFootBone.getWorldPosition(rightFootWorld)
+        if (leftToeBone) leftToeBone.getWorldPosition(leftToeWorld)
+        if (rightToeBone) rightToeBone.getWorldPosition(rightToeWorld)
+
+        const offsets = fbx.userData.bindFootOffsets || { leftFoot: 17, rightFoot: 17, leftToe: 17, rightToe: 17 }
+
+        const yLeftFoot = leftFootWorld.y - (offsets.leftFoot * scaleFactor)
+        const yRightFoot = rightFootWorld.y - (offsets.rightFoot * scaleFactor)
+        const yLeftToe = leftToeWorld.y - (offsets.leftToe * scaleFactor)
+        const yRightToe = rightToeWorld.y - (offsets.rightToe * scaleFactor)
+
+        lowestY = Math.min(yLeftFoot, yRightFoot, yLeftToe, yRightToe)
+      }
       
-      // Grounding correction: Only push the model up if it clips below the floor (lowestY < 0).
-      // This prevents character hovering/dangling and allows natural jumping (when py > 0).
-      if (lowestY < 0) {
+      // Grounding correction:
+      // For jump animations, we only prevent clipping below the floor (lowestY < 0).
+      // For non-jump animations, we enforce exact ground contact (lowestY = 0) to prevent floating.
+      if (isJump) {
+        if (lowestY < 0) {
+          outerGroupRef.current.position.y += -lowestY
+          outerGroupRef.current.updateMatrixWorld(true)
+        }
+      } else {
         outerGroupRef.current.position.y += -lowestY
         outerGroupRef.current.updateMatrixWorld(true)
       }

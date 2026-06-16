@@ -43,6 +43,24 @@ export default function WorkoutScreen({ onQuit }) {
     };
   }, [workoutStatus, tickTimer]);
 
+  // 2. Set up keyboard listener for Enter and Space to go next or skip
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      // Ignore keydown if quit confirmation modal is open
+      if (showQuitModal) return;
+
+      if (event.code === 'Space' || event.code === 'Enter') {
+        event.preventDefault();
+        markExerciseDone();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [markExerciseDone, showQuitModal]);
+
   // Handle back/quit trigger
   const handleQuitTrigger = () => {
     setShowQuitModal(true)
