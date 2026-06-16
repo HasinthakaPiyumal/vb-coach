@@ -107,6 +107,7 @@ export default function WorkoutScreen({ onQuit }) {
             workoutStatus={workoutStatus}
             showWall={exercise.showWall || false}
             wallDistance={exercise.wallDistance || 2}
+            hideBall={exercise.notes?.toLowerCase().includes('no ball') || exercise.name?.toLowerCase().includes('no ball')}
           />
           
           {/* Floating visual cue indicating wall distance if applicable */}

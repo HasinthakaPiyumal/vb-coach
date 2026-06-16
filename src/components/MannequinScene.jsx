@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Grid } from '@react-three/drei'
 import Mannequin from './Mannequin'
 
-export default function MannequinScene({ animationId = 'idle', workoutStatus = 'idle', showWall = false, wallDistance = 2 }) {
+export default function MannequinScene({ animationId = 'idle', workoutStatus = 'idle', showWall = false, wallDistance = 2, hideBall = false }) {
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
       <Canvas
@@ -33,6 +33,7 @@ export default function MannequinScene({ animationId = 'idle', workoutStatus = '
             workoutStatus={workoutStatus}
             showWall={showWall}
             wallDistance={wallDistance}
+            hideBall={hideBall}
           />
         </Suspense>
 

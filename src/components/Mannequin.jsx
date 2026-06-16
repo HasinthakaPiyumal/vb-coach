@@ -51,7 +51,7 @@ const findLowestSkinnedVertexY = (model, vertex) => {
   return Number.isFinite(lowestY) ? lowestY : 0
 }
 
-export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle', showWall = false, wallDistance = 2 }) {
+export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle', showWall = false, wallDistance = 2, hideBall = false }) {
   // Load the Mixamo rigged FBX model
   const fbx = useFBX('/BodyBlock.fbx')
 
@@ -557,32 +557,150 @@ export default function Mannequin({ animationId = 'idle', workoutStatus = 'idle'
         activeAnimId.includes('swing') ||
         activeAnimId.includes('tracking')
 
-      if (isBallExercise && workoutStatus === 'playing') {
+      if (isBallExercise && workoutStatus === 'playing' && !hideBall) {
         ballRef.current.visible = true
 
-        if (showWall) {
-          const progress = t / duration
-          const startZ = -0.3
-          const endZ = -wallDistance + 0.1
-          let zPos
-          let yPos
+        let xPos = 0
+        let yPos = 1.2
+        let zPos = -0.3
+
+        if (activeAnimId.startsWith('forearm_pass') || activeAnimId.includes('dig') || activeAnimId.includes('rally')) {
+          // Duration: 1.8. Compression: 0.7, Release: 1.0. Flight: 1.5s
+          // Loop repeats every 1.8s. Flight is from t = 1.0 to t = 1.8 + 0.7 = 2.5s.
+          const tFlightStart = 1.0
+          const tFlightEnd = 1.8 + 0.7 // 2.5
+          const totalFlightTime = tFlightEnd - tFlightStart // 1.5
           
-          if (progress < 0.5) {
-            const subAlpha = progress / 0.5
-            zPos = THREE.MathUtils.lerp(startZ, endZ, subAlpha)
-            yPos = 1.3 + Math.sin(subAlpha * Math.PI) * 0.25
-          } else {
-            const subAlpha = (progress - 0.5) / 0.5
-            zPos = THREE.MathUtils.lerp(endZ, startZ, subAlpha)
-            yPos = 1.3 + Math.sin(subAlpha * Math.PI) * 0.15
+          let tCurrent = t
+          if (tCurrent < 0.7) {
+            tCurrent += 1.8
           }
+
+          if (tCurrent >= tFlightStart && tCurrent <= tFlightEnd) {
+            // Ball is in flight
+            const f = (tCurrent - tFlightStart) / totalFlightTime
+            const startZ = -0.3
+            const endZ = -wallDistance + 0.1
+            
+            // Z-travel to wall (at f=0.5) and back
+            if (f < 0.5) {
+              zPos = THREE.MathUtils.lerp(startZ, endZ, f / 0.5)
+            } else {
+              zPos = THREE.MathUtils.lerp(endZ, startZ, (f - 0.5) / 0.5)
+            }
+            
+            // Y-travel parabolic arc
+            yPos = 0.95 + Math.sin(f * Math.PI) * 0.8
+          } else {
+            // Ball is in hands (held/compressed)
+            const fHand = (t - 0.7) / (1.0 - 0.7) // 0 to 1
+            zPos = -0.3
+            yPos = THREE.MathUtils.lerp(0.8, 0.95, fHand)
+          }
+        } 
+        else if (activeAnimId.startsWith('overhead_pass') || activeAnimId.startsWith('wall_set') || activeAnimId.startsWith('quick_set') || activeAnimId.startsWith('pass_set_combo')) {
+          // Duration: 1.6. Compression: 0.6, Release: 0.9. Flight: 1.3s
+          const tFlightStart = 0.9
+          const tFlightEnd = 1.6 + 0.6
+          const totalFlightTime = tFlightEnd - tFlightStart
           
-          ballRef.current.position.set(0, yPos, zPos)
-        } else {
-          const progress = t / duration
-          const height = 1.3 + Math.sin(progress * Math.PI) * 1.5
-          ballRef.current.position.set(0, height, -0.2)
+          let tCurrent = t
+          if (tCurrent < 0.6) {
+            tCurrent += 1.6
+          }
+
+          if (tCurrent >= tFlightStart && tCurrent <= tFlightEnd) {
+            const f = (tCurrent - tFlightStart) / totalFlightTime
+            const startZ = -0.25
+            const endZ = -wallDistance + 0.1
+            
+            if (f < 0.5) {
+              zPos = THREE.MathUtils.lerp(startZ, endZ, f / 0.5)
+            } else {
+              zPos = THREE.MathUtils.lerp(endZ, startZ, (f - 0.5) / 0.5)
+            }
+            
+            yPos = 1.95 + Math.sin(f * Math.PI) * 0.6
+          } else {
+            const fHand = (t - 0.6) / (0.9 - 0.6)
+            zPos = -0.25
+            yPos = THREE.MathUtils.lerp(1.65, 1.95, fHand)
+          }
+        } 
+        else if (activeAnimId.startsWith('self_set') || activeAnimId.startsWith('kneeling_set')) {
+          // Duration: 1.8. Compression: 0.675, Release: 1.012. Flight: 1.463s
+          const tFlightStart = 1.012
+          const tFlightEnd = 1.8 + 0.675
+          const totalFlightTime = tFlightEnd - tFlightStart
+          
+          let tCurrent = t
+          if (tCurrent < 0.675) {
+            tCurrent += 1.8
+          }
+
+          if (tCurrent >= tFlightStart && tCurrent <= tFlightEnd) {
+            const f = (tCurrent - tFlightStart) / totalFlightTime
+            zPos = -0.15
+            yPos = 1.95 + Math.sin(f * Math.PI) * 1.8 // high self-set
+          } else {
+            const fHand = (t - 0.675) / (1.012 - 0.675)
+            zPos = -0.15
+            yPos = THREE.MathUtils.lerp(1.65, 1.95, fHand)
+          }
+        } 
+        else if (activeAnimId.startsWith('wall_hit') || activeAnimId.startsWith('arm_swing') || activeAnimId.startsWith('directed_attack') || activeAnimId.startsWith('power_hit') || activeAnimId.startsWith('attack_rally') || activeAnimId.startsWith('jump_hit')) {
+          // Spike/Hit: duration = 2.0s
+          if (t < 0.8) {
+            const f = t / 0.8
+            xPos = THREE.MathUtils.lerp(-0.15, 0.05, f)
+            yPos = 1.25 + Math.sin(f * Math.PI / 2) * 0.9
+            zPos = -0.2
+          } else if (t >= 0.8 && t < 1.2) {
+            const f = (t - 0.8) / 0.4
+            xPos = 0.05
+            yPos = 2.15 - f * 0.2
+            zPos = -0.2
+          } else {
+            const f = (t - 1.2) / 0.8
+            xPos = THREE.MathUtils.lerp(0.05, 0, f)
+            const startZ = -0.2
+            const endZ = -wallDistance + 0.1
+            if (f < 0.5) {
+              zPos = THREE.MathUtils.lerp(startZ, endZ, f / 0.5)
+            } else {
+              zPos = THREE.MathUtils.lerp(endZ, startZ, (f - 0.5) / 0.5)
+            }
+            yPos = 1.95 - (f * 0.7)
+          }
+        } 
+        else if (activeAnimId.includes('tracking') || activeAnimId.includes('vision') || activeAnimId.includes('sound')) {
+          const f = t / duration
+          if (activeAnimId.includes('vision')) {
+            const startZ = -0.3
+            const endZ = -wallDistance + 0.1
+            if (f < 0.5) {
+              zPos = THREE.MathUtils.lerp(startZ, endZ, f / 0.5)
+            } else {
+              zPos = THREE.MathUtils.lerp(endZ, startZ, (f - 0.5) / 0.5)
+            }
+            yPos = 1.35 + Math.sin(f * Math.PI) * 0.8
+          } else {
+            // Sound-tracking clap is at t = 0.9s (halfway)
+            zPos = -0.3
+            if (f < 0.5) {
+              yPos = THREE.MathUtils.lerp(1.3, 0.1, f / 0.5)
+            } else {
+              yPos = THREE.MathUtils.lerp(0.1, 1.3, (f - 0.5) / 0.5)
+            }
+          }
         }
+        else {
+          const progress = t / duration
+          yPos = 1.3 + Math.sin(progress * Math.PI) * 1.5
+          zPos = -0.2
+        }
+
+        ballRef.current.position.set(xPos, yPos, zPos)
       } else {
         ballRef.current.visible = false
       }
