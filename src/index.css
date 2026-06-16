@@ -1,0 +1,389 @@
+:root {
+  /* Colors */
+  --bg-color: #0a0a0f;
+  --card-bg: #131322;
+  --card-bg-elevated: #1e1e32;
+  --border-color: #242438;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  
+  --accent-color: #ffd60a;
+  --accent-hover: #ffea3d;
+  --accent-glow: rgba(255, 214, 10, 0.2);
+  --accent-glow-strong: rgba(255, 214, 10, 0.4);
+  
+  --success-color: #10b981;
+  --danger-color: #f43f5e;
+  --warning-color: #f59e0b;
+  
+  /* Fonts */
+  --font-headings: 'Outfit', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Typography styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Utility Animations */
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px var(--accent-glow);
+  }
+  50% {
+    box-shadow: 0 0 15px var(--accent-glow-strong);
+  }
+  100% {
+    box-shadow: 0 0 5px var(--accent-glow);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-glow {
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(19, 19, 34, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+
+.glass-card {
+  background: rgba(25, 25, 42, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  transition: all var(--transition-normal);
+}
+
+.glass-card:hover {
+  border-color: rgba(255, 214, 10, 0.3);
+  background: rgba(25, 25, 42, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Button Reset & Stylings */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  outline: none;
+}
+
+.btn-primary {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  font-family: var(--font-headings);
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 12px rgba(255, 214, 10, 0.25);
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 214, 10, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  background: var(--card-bg-elevated);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: var(--font-headings);
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.btn-secondary:hover {
+  background: var(--border-color);
+  border-color: var(--text-muted);
+}
+
+.btn-icon {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all var(--transition-fast);
+}
+
+.btn-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-color);
+  border-color: rgba(255, 214, 10, 0.3);
+}
+
+/* Visual Layout Helpers */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.low-text-muted {
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* ==========================================
+   Responsive Layout & Desktop Grid Styles
+   ========================================== */
+
+/* Main responsive shell wrapper */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  width: 100%;
+  max-width: 480px; /* default mobile */
+  background: #0a0a0f;
+  box-shadow: 0 0 60px rgba(255, 214, 10, 0.04), 0 0 120px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow: hidden;
+  border-left: 1px solid rgba(255, 214, 10, 0.06);
+  border-right: 1px solid rgba(255, 214, 10, 0.06);
+  transition: all var(--transition-normal);
+}
+
+/* HomeScreen mobile setup */
+.home-container {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+}
+
+/* WorkoutScreen mobile setup */
+.workout-container {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+}
+.workout-left-col {
+  flex: 1.1 !important;
+  min-height: 240px !important;
+  position: relative !important;
+  width: 100% !important;
+}
+.workout-right-col {
+  flex: 0.9 !important;
+  min-height: 320px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+  width: 100% !important;
+  background: #0a0a0f !important;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Desktop screen rules */
+@media (min-width: 768px) {
+  .app-wrapper {
+    max-width: 1200px !important;
+    height: 90vh !important;
+    max-height: 850px !important;
+    border-radius: 24px !important;
+    border: 1px solid rgba(255, 214, 10, 0.1) !important;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.9), 0 0 80px rgba(255, 214, 10, 0.03);
+  }
+
+  /* Grid layout for Dashboard */
+  .home-container {
+    display: grid !important;
+    grid-template-columns: 4fr 6fr !important;
+    gap: 24px !important;
+    padding: 32px 28px !important;
+    overflow-y: hidden !important;
+  }
+  .home-left-col {
+    height: 100% !important;
+    overflow-y: auto !important;
+    padding-right: 8px !important;
+  }
+  .home-right-col {
+    height: 100% !important;
+    overflow-y: auto !important;
+    padding-right: 8px !important;
+  }
+
+  /* Grid layout for active workout screen */
+  .workout-container {
+    display: grid !important;
+    grid-template-columns: 5.5fr 4.5fr !important;
+    flex-direction: row !important;
+    height: 100% !important;
+  }
+  .workout-left-col {
+    height: 100% !important;
+    border-right: 1px solid var(--border-color) !important;
+    border-bottom: none !important;
+  }
+  .workout-right-col {
+    height: 100% !important;
+    border-top: none !important;
+  }
+}
+
+/* Expandable Exercise details / accordion summary styles */
+.exercise-block-details {
+  border: 1px solid var(--border-color);
+  background: rgba(25, 25, 42, 0.25);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 8px;
+  transition: all var(--transition-normal);
+}
+
+.exercise-block-details[open] {
+  border-color: rgba(255, 214, 10, 0.15);
+  background: rgba(25, 25, 42, 0.45);
+}
+
+.exercise-block-summary::-webkit-details-marker {
+  display: none;
+}
+
+.exercise-block-summary {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+  background: var(--card-bg);
+  transition: background var(--transition-fast);
+}
+
+.exercise-block-summary:hover {
+  background: var(--card-bg-elevated);
+}
+
+.exercise-block-details[open] .chevron-icon {
+  transform: rotate(180deg);
+  color: var(--accent-color);
+}
+
+.chevron-icon {
+  transition: transform var(--transition-normal);
+  color: var(--text-muted);
+}
+
+.accordionContent {
+  padding: 8px 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Hover effects */
+.exercise-row-hover {
+  transition: all var(--transition-fast) !important;
+}
+
+.exercise-row-hover:hover {
+  background: rgba(255, 214, 10, 0.03) !important;
+  border-color: rgba(255, 214, 10, 0.15) !important;
+}
+
+.drillPlayBtn {
+  transition: transform var(--transition-fast) !important;
+}
+
+.drillPlayBtn:hover {
+  transform: scale(1.1);
+  background: var(--accent-hover) !important;
+}
+

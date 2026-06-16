@@ -1,0 +1,2673 @@
+[
+  {
+    "dayNumber": 1,
+    "title": "Day 1 — Lower Body Power",
+    "theme": "Lower Body Power",
+    "phase1Duration": "90 min",
+    "blocks": [
+      {
+        "id": "warmup",
+        "title": "Warm-Up",
+        "duration": 12,
+        "exercises": [
+          {
+            "id": "jog_in_place",
+            "name": "Light jog in place",
+            "type": "time",
+            "targetValue": 120,
+            "animationId": "jog_in_place",
+            "notes": "Keep an upright posture and warm up the ankles and knees."
+          },
+          {
+            "id": "high_knees",
+            "name": "High knees",
+            "type": "time",
+            "targetValue": 60,
+            "sets": 2,
+            "rest": 15,
+            "animationId": "high_knees",
+            "notes": "Drive knees up to hip height, pump your arms."
+          },
+          {
+            "id": "butt_kicks",
+            "name": "Butt kicks",
+            "type": "time",
+            "targetValue": 60,
+            "sets": 2,
+            "rest": 15,
+            "animationId": "butt_kicks",
+            "notes": "Bring heels to glutes, keep torso slightly forward."
+          },
+          {
+            "id": "leg_swings_front",
+            "name": "Leg swings (front-to-back)",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 1,
+            "notes": "15 swings per leg. Hold a wall for balance, swing forward and back.",
+            "animationId": "leg_swing_front"
+          },
+          {
+            "id": "leg_swings_side",
+            "name": "Leg swings (side-to-side)",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 1,
+            "notes": "15 swings per leg. Swing across body and out to the side.",
+            "animationId": "leg_swing_side"
+          },
+          {
+            "id": "ankle_circles",
+            "name": "Ankle circles",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 1,
+            "notes": "15 circles each direction per foot. Loosens ankles for jumping.",
+            "animationId": "ankle_circle"
+          },
+          {
+            "id": "bodyweight_squats_slow",
+            "name": "Bodyweight squats (slow)",
+            "type": "reps",
+            "targetValue": 10,
+            "animationId": "squat_slow",
+            "notes": "Focus on deep range and slow tempo to warm up hips."
+          },
+          {
+            "id": "hip_circles",
+            "name": "Hip circles",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 1,
+            "notes": "15 circles each direction. Stand wide and rotate hips.",
+            "animationId": "hip_circle"
+          },
+          {
+            "id": "walking_lunges_dynamic",
+            "name": "Walking lunges",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Step forward and lower hips dynamically.",
+            "animationId": "lunge_walk"
+          }
+        ]
+      },
+      {
+        "id": "strength",
+        "title": "Strength — Lower Body Power",
+        "duration": 30,
+        "exercises": [
+          {
+            "id": "atg_squats",
+            "name": "Bodyweight squats (ATG)",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 4,
+            "rest": 45,
+            "animationId": "squat_atg",
+            "notes": "Thighs below parallel. Chest up, weight in heels."
+          },
+          {
+            "id": "jump_squats",
+            "name": "Jump squats",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 4,
+            "rest": 60,
+            "animationId": "jump_squat",
+            "notes": "Explode up, land softly on balls of feet. Max height."
+          },
+          {
+            "id": "forward_lunges",
+            "name": "Forward lunges",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 45,
+            "notes": "12 reps each leg. Front knee behind toes. Drive through the heel.",
+            "animationId": "forward_lunge"
+          },
+          {
+            "id": "reverse_lunges",
+            "name": "Reverse lunges",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 45,
+            "notes": "12 reps each leg. Step backward. Easier on knees, good glute load.",
+            "animationId": "reverse_lunge"
+          },
+          {
+            "id": "calf_raises",
+            "name": "Calf raises",
+            "type": "reps",
+            "targetValue": 25,
+            "sets": 4,
+            "rest": 30,
+            "animationId": "calf_raise",
+            "notes": "Slow 3-second lowering. Essential for vertical jump power."
+          },
+          {
+            "id": "wall_sit",
+            "name": "Wall sit",
+            "type": "time",
+            "targetValue": 45,
+            "sets": 3,
+            "rest": 45,
+            "showWall": true,
+            "wallDistance": 0.5,
+            "animationId": "wall_sit",
+            "notes": "Back flat against wall, thighs parallel to the ground."
+          },
+          {
+            "id": "single_leg_glute_bridges",
+            "name": "Single-leg glute bridges",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 3,
+            "rest": 45,
+            "notes": "15 reps each leg. Squeeze glute at top. Hold 2 seconds.",
+            "animationId": "single_leg_bridge"
+          },
+          {
+            "id": "squat_hold_pulses",
+            "name": "Squat hold pulses",
+            "type": "reps",
+            "targetValue": 20,
+            "sets": 3,
+            "rest": 45,
+            "animationId": "squat_pulse",
+            "notes": "Hold at bottom of squat, pulse up and down 3 inches."
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Balance & Stability",
+        "duration": 8,
+        "exercises": [
+          {
+            "id": "single_leg_stand_open",
+            "name": "Single-leg stand (eyes open)",
+            "type": "time",
+            "targetValue": 45,
+            "notes": "45s each leg. Squeeze core, lock hip, fix focus on a wall point.",
+            "animationId": "single_leg_stand"
+          },
+          {
+            "id": "single_leg_stand_closed",
+            "name": "Single-leg stand (eyes closed)",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "30s each leg. Critical for vision compensation and ankle stability.",
+            "animationId": "single_leg_stand"
+          },
+          {
+            "id": "single_leg_mini_squats",
+            "name": "Single-leg mini squats",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Bend knee slightly, keeping it aligned with toes.",
+            "animationId": "single_leg_mini_squat"
+          },
+          {
+            "id": "single_leg_deadlift",
+            "name": "Single-leg deadlift (hold volleyball)",
+            "type": "reps",
+            "targetValue": 8,
+            "notes": "8 reps each leg. Hinge at hips, lower ball toward ground, leg straight back.",
+            "animationId": "single_leg_deadlift"
+          },
+          {
+            "id": "tandem_stance_walk",
+            "name": "Tandem stance walk",
+            "type": "reps",
+            "targetValue": 20,
+            "notes": "10 steps forward + 10 back (heel-to-toe, eyes closed). Keep posture tall.",
+            "animationId": "tandem_walk"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Wall Skills Block",
+        "duration": 35,
+        "exercises": [
+          {
+            "id": "wall_forearm_passing",
+            "name": "Wall Forearm Passing",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Stationary wall passing at 2m. Straight platform, hit forearm.",
+                "goal": "Goal: 15 consecutive forearm passes",
+                "wallDistance": 2.0,
+                "animationId": "forearm_pass_l1"
+              },
+              "2": {
+                "notes": "Moving forearm passing. Shuffle side to side between passes.",
+                "goal": "Goal: 20 consecutive passes on the move",
+                "wallDistance": 2.2,
+                "animationId": "forearm_pass_l2"
+              },
+              "3": {
+                "notes": "Hard wall digs. Stand 5m back, hit hard at wall, dig the fast rebound.",
+                "goal": "Goal: 10 clean digs from 5m",
+                "wallDistance": 5.0,
+                "animationId": "forearm_pass_l3"
+              }
+            }
+          },
+          {
+            "id": "wall_overhead_passing",
+            "name": "Wall Overhead Passing",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Stationary overhead passes at 2m. Triangle hands, fingertip contact.",
+                "goal": "Goal: 10 consecutive overhead passes",
+                "wallDistance": 2.0,
+                "animationId": "overhead_pass_l1"
+              },
+              "2": {
+                "notes": "Alternating forearm and overhead passes. Continuous shift.",
+                "goal": "Goal: 12 alternating passes",
+                "wallDistance": 2.0,
+                "animationId": "overhead_pass_l2"
+              },
+              "3": {
+                "notes": "High wall digs to self-sets. Dig hard ball, then set to yourself.",
+                "goal": "Goal: 10 clean dig-to-set sequences",
+                "wallDistance": 4.0,
+                "animationId": "overhead_pass_l3"
+              }
+            }
+          },
+          {
+            "id": "wall_sets_target",
+            "name": "Wall Sets to Target",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Set to a consistent 50cm box target on wall. Hands above forehead.",
+                "goal": "Goal: 15 consecutive sets in target zone",
+                "wallDistance": 1.8,
+                "animationId": "wall_set_l1"
+              },
+              "2": {
+                "notes": "Set to alternating left/right targets. Shuffle to align.",
+                "goal": "Goal: 5 alternating target pairs",
+                "wallDistance": 2.0,
+                "animationId": "wall_set_l2"
+              },
+              "3": {
+                "notes": "Low, rapid set rally. Fast-paced, low arc against wall.",
+                "goal": "Goal: 10 quick sets in a row",
+                "wallDistance": 1.5,
+                "animationId": "wall_set_l3"
+              }
+            }
+          },
+          {
+            "id": "self_sets",
+            "name": "Self-Sets (Straight Up)",
+            "type": "time",
+            "targetValue": 240,
+            "levels": {
+              "1": {
+                "notes": "Set ball straight up in place. Keep hands soft and triangle shape.",
+                "goal": "Goal: 20 consecutive self-sets",
+                "animationId": "self_set_l1"
+              },
+              "2": {
+                "notes": "Set on the move. Set straight up while shuffling left and right.",
+                "goal": "Goal: 12 moving self-sets",
+                "animationId": "self_set_l2"
+              },
+              "3": {
+                "notes": "Kneeling self-sets. Removes leg drive to isolate wrists.",
+                "goal": "Goal: 15 kneeling self-sets",
+                "animationId": "self_set_l3"
+              }
+            }
+          },
+          {
+            "id": "standing_arm_swing",
+            "name": "Standing Arm Swing (No Ball)",
+            "type": "time",
+            "targetValue": 180,
+            "levels": {
+              "1": {
+                "notes": "Bow-and-arrow arm draw. Focus on high elbow and wrist snap.",
+                "goal": "Goal: 60+ swings in 3 min",
+                "animationId": "arm_swing_l1"
+              },
+              "2": {
+                "notes": "Approach footwork with arm swing (no jump). Focus on step timing.",
+                "goal": "Goal: 25+ step-swings",
+                "animationId": "arm_swing_l2"
+              },
+              "3": {
+                "notes": "Full approach and jump swing. Max vertical reach and arm velocity.",
+                "goal": "Goal: 20+ full jump swings",
+                "animationId": "arm_swing_l3"
+              }
+            }
+          },
+          {
+            "id": "wall_hitting",
+            "name": "Wall Hitting (Standing)",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss up, hit down into wall. Contact high, snap wrist for topspin.",
+                "goal": "Goal: 10 clean wall hits",
+                "wallDistance": 2.5,
+                "animationId": "wall_hit_l1"
+              },
+              "2": {
+                "notes": "Approach steps then hit against wall (no jump). Move with toss.",
+                "goal": "Goal: 8 timed hits",
+                "wallDistance": 3.0,
+                "animationId": "wall_hit_l2"
+              },
+              "3": {
+                "notes": "Continuous wall hit rally. Let ball bounce once, hit again.",
+                "goal": "Goal: 5 consecutive rally hits",
+                "wallDistance": 2.5,
+                "animationId": "wall_hit_l3"
+              }
+            }
+          },
+          {
+            "id": "approach_footwork",
+            "name": "Approach Footwork (No Ball)",
+            "type": "time",
+            "targetValue": 180,
+            "levels": {
+              "1": {
+                "notes": "L-R-L (or R-L-R) footwork steps. Speed up the last two steps.",
+                "goal": "Goal: 25+ clean approaches",
+                "animationId": "approach_footwork_l1"
+              },
+              "2": {
+                "notes": "Approach with vertical jump. Focus on blocking forward momentum.",
+                "goal": "Goal: 20+ jump approaches",
+                "animationId": "approach_footwork_l2"
+              },
+              "3": {
+                "notes": "Transition-to-approach. Start back, sprint forward, approach.",
+                "goal": "Goal: 15 transition approaches",
+                "animationId": "approach_footwork_l3"
+              }
+            }
+          },
+          {
+            "id": "ball_tracking",
+            "name": "Ball Tracking & Point",
+            "type": "time",
+            "targetValue": 150,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss at wall. Track with eyes, point finger at ball. Do not catch.",
+                "goal": "Goal: Smooth visual tracking",
+                "wallDistance": 2.0,
+                "animationId": "vision_tracking_l1"
+              },
+              "2": {
+                "notes": "Peripheral catch. Fix eyes on wall mark, toss ball side, catch.",
+                "goal": "Goal: Catch 8/10 in periphery",
+                "wallDistance": 2.0,
+                "animationId": "vision_tracking_l2"
+              },
+              "3": {
+                "notes": "Rapid angle reads. Toss hard at angles, predict path, pre-position.",
+                "goal": "Goal: 8/10 correct body positioning",
+                "wallDistance": 2.5,
+                "animationId": "vision_tracking_l3"
+              }
+            }
+          },
+          {
+            "id": "sound_tracking",
+            "name": "Sound Tracking (Eyes Closed)",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Bounce ball, close eyes. Clap exactly when it hits ground.",
+                "goal": "Goal: 10 accurate claps",
+                "animationId": "sound_tracking_l1"
+              },
+              "2": {
+                "notes": "Toss ball up, close eyes. Track sound and catch before second bounce.",
+                "goal": "Goal: 8 successful catches",
+                "animationId": "sound_tracking_l2"
+              },
+              "3": {
+                "notes": "Bounce off wall, close eyes. Track rebound sound and catch.",
+                "goal": "Goal: 5 blind catches",
+                "animationId": "sound_tracking_l3"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cooldown",
+        "title": "Cool-Down & Stretch",
+        "duration": 5,
+        "exercises": [
+          {
+            "id": "quad_stretch",
+            "name": "Standing quad stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each leg. Pull heel to glutes, keep knees together.",
+            "animationId": "quad_stretch"
+          },
+          {
+            "id": "hamstring_stretch",
+            "name": "Standing hamstring stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each leg. Fold forward at hips, reach for toes.",
+            "animationId": "hamstring_stretch"
+          },
+          {
+            "id": "calf_stretch",
+            "name": "Calf stretch against wall",
+            "type": "time",
+            "targetValue": 60,
+            "showWall": true,
+            "wallDistance": 0.3,
+            "notes": "30s each leg. Press back heel down, lean forward into wall.",
+            "animationId": "calf_stretch_wall"
+          },
+          {
+            "id": "wrist_stretch",
+            "name": "Forearm & wrist stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each arm. Pull fingertips back to stretch forearms.",
+            "animationId": "wrist_stretch"
+          },
+          {
+            "id": "deep_breathing",
+            "name": "Deep breathing",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Slow deep breaths, nose to mouth. Lower heart rate.",
+            "animationId": "deep_breathing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 2,
+    "title": "Day 2 — Upper Body & Core",
+    "theme": "Upper Body & Core",
+    "phase1Duration": "90 min",
+    "blocks": [
+      {
+        "id": "warmup",
+        "title": "Warm-Up",
+        "duration": 12,
+        "exercises": [
+          {
+            "id": "jumping_jacks",
+            "name": "Jumping jacks",
+            "type": "time",
+            "targetValue": 90,
+            "animationId": "jumping_jacks",
+            "notes": "Full extension of arms, jump lightly on toes."
+          },
+          {
+            "id": "arm_circles",
+            "name": "Arm circles",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s forward, 30s backward. Start small, increase to full circles.",
+            "animationId": "arm_circles"
+          },
+          {
+            "id": "shoulder_pass_throughs",
+            "name": "Shoulder pass-throughs",
+            "type": "reps",
+            "targetValue": 15,
+            "notes": "Hold a towel wide, pass arms over head to lower back and forward.",
+            "animationId": "shoulder_pass_through"
+          },
+          {
+            "id": "torso_twists",
+            "name": "Torso twists",
+            "type": "reps",
+            "targetValue": 20,
+            "notes": "Stand wide, twist torso side to side, let arms swing loosely.",
+            "animationId": "torso_twist"
+          },
+          {
+            "id": "inchworms",
+            "name": "Inchworms",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "Walk hands out to push-up plank, walk feet in to hands.",
+            "animationId": "inchworm"
+          },
+          {
+            "id": "shoulder_taps",
+            "name": "Push-up position shoulder taps",
+            "type": "reps",
+            "targetValue": 24,
+            "notes": "12 taps each side. Maintain solid plank, tap opposite shoulder.",
+            "animationId": "shoulder_taps"
+          },
+          {
+            "id": "scapular_pushups",
+            "name": "Scapular push-ups",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "In plank, sink shoulders together and push apart. Arms straight.",
+            "animationId": "scapular_pushup"
+          },
+          {
+            "id": "wrist_stretches",
+            "name": "Wrist circles & stretches",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Rotate wrists, stretch fingers back. Prepares hands for setting.",
+            "animationId": "wrist_rotation"
+          }
+        ]
+      },
+      {
+        "id": "strength",
+        "title": "Strength — Upper Body & Core",
+        "duration": 30,
+        "exercises": [
+          {
+            "id": "pushups",
+            "name": "Push-ups",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 4,
+            "rest": 45,
+            "animationId": "pushup",
+            "notes": "Full range of motion. Keep elbows tucked at 45 degrees."
+          },
+          {
+            "id": "diamond_pushups",
+            "name": "Diamond push-ups",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 45,
+            "animationId": "diamond_pushup",
+            "notes": "Hands close, fingers forming a diamond. Builds triceps for attacking."
+          },
+          {
+            "id": "pike_pushups",
+            "name": "Pike push-ups",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 60,
+            "animationId": "pike_pushup",
+            "notes": "Hips high in V-shape. Low head to floor. Builds shoulders."
+          },
+          {
+            "id": "wide_pushups",
+            "name": "Wide push-ups",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 45,
+            "animationId": "wide_pushup",
+            "notes": "Hands wider than shoulders. Targets chest pressing power."
+          },
+          {
+            "id": "plank",
+            "name": "Plank",
+            "type": "time",
+            "targetValue": 60,
+            "sets": 3,
+            "rest": 30,
+            "animationId": "plank",
+            "notes": "Straight line from head to heels. Squeeze core and glutes."
+          },
+          {
+            "id": "side_plank",
+            "name": "Side plank",
+            "type": "time",
+            "targetValue": 25,
+            "sets": 3,
+            "rest": 30,
+            "notes": "25s each side. Build rotational torso strength for hits.",
+            "animationId": "side_plank"
+          },
+          {
+            "id": "dead_bugs",
+            "name": "Dead bugs",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 30,
+            "notes": "12 reps each side. Lie on back, lower opposite arm/leg to floor.",
+            "animationId": "dead_bug"
+          },
+          {
+            "id": "superman_holds",
+            "name": "Superman holds",
+            "type": "time",
+            "targetValue": 20,
+            "sets": 3,
+            "rest": 30,
+            "animationId": "superman_hold",
+            "notes": "Raise chest and thighs off floor. Squeeze lower back."
+          },
+          {
+            "id": "bicycle_crunches",
+            "name": "Bicycle crunches",
+            "type": "reps",
+            "targetValue": 20,
+            "sets": 3,
+            "rest": 30,
+            "animationId": "bicycle_crunch",
+            "notes": "20 total reps. Touch elbow to opposite knee, rotate torso."
+          },
+          {
+            "id": "plank_to_pushup",
+            "name": "Plank to push-up",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 45,
+            "animationId": "plank_to_pushup",
+            "notes": "Start in forearm plank, push up one hand at a time to standard plank."
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Balance & Stability",
+        "duration": 8,
+        "exercises": [
+          {
+            "id": "single_leg_reach",
+            "name": "Single-leg reach",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Balance on one foot, reach forward to touch floor.",
+            "animationId": "single_leg_reach"
+          },
+          {
+            "id": "tandem_stance_closed",
+            "name": "Tandem stance (eyes closed)",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "30s each foot forward. Rest heel of front foot against toe of back foot.",
+            "animationId": "tandem_stance"
+          },
+          {
+            "id": "single_leg_arm_swings",
+            "name": "Single-leg arm swings",
+            "type": "reps",
+            "targetValue": 12,
+            "notes": "12 reps each leg. Simulate volleyball hitting arm swing while balancing.",
+            "animationId": "single_leg_swing"
+          },
+          {
+            "id": "tree_pose",
+            "name": "Yoga tree pose",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "30s each leg. Press sole of foot to inner thigh, reach arms high.",
+            "animationId": "tree_pose"
+          },
+          {
+            "id": "single_leg_rotation",
+            "name": "Single-leg rotation",
+            "type": "reps",
+            "targetValue": 8,
+            "notes": "8 reps each leg. Twist torso side to side while balancing on one foot.",
+            "animationId": "single_leg_rotation"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Wall Skills Block",
+        "duration": 35,
+        "exercises": [
+          {
+            "id": "shuffle_forearm_pass",
+            "name": "Shuffle & Forearm Pass",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Pass to different wall spots, shuffle to get behind. Move feet.",
+                "goal": "Goal: 15 consecutive moving passes",
+                "wallDistance": 2.0,
+                "animationId": "forearm_pass_shuffle_l1"
+              },
+              "2": {
+                "notes": "Shuffle further. Pass, shuffle 2 steps, pass back to center.",
+                "goal": "Goal: 20 shuffle-passes",
+                "wallDistance": 2.2,
+                "animationId": "forearm_pass_shuffle_l2"
+              },
+              "3": {
+                "notes": "Low-to-high alternating shuffle passes. Drop low, stand high.",
+                "goal": "Goal: 12 alternating moving passes",
+                "wallDistance": 2.5,
+                "animationId": "forearm_pass_shuffle_l3"
+              }
+            }
+          },
+          {
+            "id": "low_high_passes",
+            "name": "Low-to-High Alternating Passes",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Alternate between low forearm pass and high overhead pass.",
+                "goal": "Goal: 10 alternating pass sequences",
+                "wallDistance": 2.0,
+                "animationId": "low_high_l1"
+              },
+              "2": {
+                "notes": "Rapid low-high. Keep the contact swift, stay in lower stance.",
+                "goal": "Goal: 15 quick sequences",
+                "wallDistance": 1.8,
+                "animationId": "low_high_l2"
+              },
+              "3": {
+                "notes": "Dig hard ball (low) then self-set (high) then hit against wall.",
+                "goal": "Goal: 8 complete combinations",
+                "wallDistance": 3.0,
+                "animationId": "low_high_l3"
+              }
+            }
+          },
+          {
+            "id": "target_setting_2spots",
+            "name": "Target Setting (2 Spots)",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Alternate setting to left and right targets on wall (1m apart).",
+                "goal": "Goal: 8 alternating target pairs",
+                "wallDistance": 2.0,
+                "animationId": "target_set_2spots_l1"
+              },
+              "2": {
+                "notes": "Set further apart (2m targets). Shuffle to align after setting.",
+                "goal": "Goal: 12 target hits on move",
+                "wallDistance": 2.2,
+                "animationId": "target_set_2spots_l2"
+              },
+              "3": {
+                "notes": "Target sets with random shifts. React to bad rebounds.",
+                "goal": "Goal: 10 reactive target sets",
+                "wallDistance": 2.0,
+                "animationId": "target_set_2spots_l3"
+              }
+            }
+          },
+          {
+            "id": "setting_on_move",
+            "name": "Setting on the Move",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Set, shuffle 2 steps, set. Keep ball high to give time to move.",
+                "goal": "Goal: 10 moving sets",
+                "wallDistance": 2.0,
+                "animationId": "setting_move_l1"
+              },
+              "2": {
+                "notes": "Lower arc sets on the move. Faster shuffles needed.",
+                "goal": "Goal: 15 quick moving sets",
+                "wallDistance": 1.8,
+                "animationId": "setting_move_l2"
+              },
+              "3": {
+                "notes": "Set-shuffle-circle. Set while moving in a circular path.",
+                "goal": "Goal: 10 sets in circle movement",
+                "wallDistance": 1.8,
+                "animationId": "setting_move_l3"
+              }
+            }
+          },
+          {
+            "id": "approach_standing_hit",
+            "name": "Approach + Standing Wall Hit",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Step L-R-L forward, toss, hit standing (no jump). Clean contact.",
+                "goal": "Goal: 10 solid standing contacts",
+                "wallDistance": 2.5,
+                "animationId": "approach_stand_hit_l1"
+              },
+              "2": {
+                "notes": "Increase swing speed. Focus on full shoulder-to-wrist snap.",
+                "goal": "Goal: 15 fast snap hits",
+                "wallDistance": 2.5,
+                "animationId": "approach_stand_hit_l2"
+              },
+              "3": {
+                "notes": "Vary hitting direction. Hit deep wall, then short ground bounce.",
+                "goal": "Goal: 10 alternate depth hits",
+                "wallDistance": 3.0,
+                "animationId": "approach_stand_hit_l3"
+              }
+            }
+          },
+          {
+            "id": "wrist_snap_drills",
+            "name": "Wrist Snap Drills",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Hold ball high. Snap wrist down to bounce ball to ground. 30+ reps.",
+                "goal": "Goal: 30 clean snaps",
+                "animationId": "wrist_snap_l1"
+              },
+              "2": {
+                "notes": "Alternating hand snaps. Drop-snap, catch, snap other hand.",
+                "goal": "Goal: 40 snaps total",
+                "animationId": "wrist_snap_l2"
+              },
+              "3": {
+                "notes": "One-handed fast dribbles against floor. pure finger/wrist snap.",
+                "goal": "Goal: 20 consecutive floor dribbles",
+                "animationId": "wrist_snap_l3"
+              }
+            }
+          },
+          {
+            "id": "approach_jump_no_ball",
+            "name": "Approach + Jump (No Ball)",
+            "type": "time",
+            "targetValue": 180,
+            "levels": {
+              "1": {
+                "notes": "Full approach and jump. Focus on landing softly on both feet.",
+                "goal": "Goal: 15 jumps with soft landings",
+                "animationId": "approach_jump_l1"
+              },
+              "2": {
+                "notes": "Add blocking arm extension at peak. Simulate net block.",
+                "goal": "Goal: 20 block-approach jumps",
+                "animationId": "approach_jump_l2"
+              },
+              "3": {
+                "notes": "Consecutive jumps. Land and immediately transition into next.",
+                "goal": "Goal: 12 quick double jumps",
+                "animationId": "approach_jump_l3"
+              }
+            }
+          },
+          {
+            "id": "angled_toss_read",
+            "name": "Angled Wall Toss & Read",
+            "type": "time",
+            "targetValue": 180,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss ball at angle. Predict bounce, move body to intercept. Catch.",
+                "goal": "Goal: 10 clean interception catches",
+                "wallDistance": 2.5,
+                "animationId": "angle_read_l1"
+              },
+              "2": {
+                "notes": "Dig instead of catch. Move, get low platform under ball, pass up.",
+                "goal": "Goal: 8 clean dig passes",
+                "wallDistance": 3.0,
+                "animationId": "angle_read_l2"
+              },
+              "3": {
+                "notes": "Set instead of dig. Fast feet, get under ball, overhead set up.",
+                "goal": "Goal: 8 clean set transitions",
+                "wallDistance": 2.5,
+                "animationId": "angle_read_l3"
+              }
+            }
+          },
+          {
+            "id": "peripheral_movement",
+            "name": "Peripheral Movement Detection",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Fix gaze on wall mark. Move ball slowly in periphery. Detect it.",
+                "goal": "Goal: Maintain gaze, detect movement",
+                "animationId": "peripheral_l1"
+              },
+              "2": {
+                "notes": "Toss and catch in peripheral vision. Do not turn head.",
+                "goal": "Goal: 10 peripheral catches",
+                "animationId": "peripheral_l2"
+              },
+              "3": {
+                "notes": "Set ball to self using only peripheral vision. Focus on a wall mark.",
+                "goal": "Goal: 8 peripheral self-sets",
+                "animationId": "peripheral_l3"
+              }
+            }
+          },
+          {
+            "id": "eyes_closed_handling",
+            "name": "Eyes-Closed Ball Handling",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Close eyes. Toss ball hand-to-hand. Develop ball feeling.",
+                "goal": "Goal: 20 hand-to-hand passes",
+                "animationId": "eyes_closed_l1"
+              },
+              "2": {
+                "notes": "Toss ball up slightly, eyes closed, and catch cleanly.",
+                "goal": "Goal: 10 blind catches",
+                "animationId": "eyes_closed_l2"
+              },
+              "3": {
+                "notes": "Clap before catching. Toss up, close eyes, clap, catch ball.",
+                "goal": "Goal: 8 clap-catches",
+                "animationId": "eyes_closed_l3"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cooldown",
+        "title": "Cool-Down & Stretch",
+        "duration": 5,
+        "exercises": [
+          {
+            "id": "shoulder_stretch",
+            "name": "Cross-body shoulder stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each arm. Pull arm across chest, lock with other forearm.",
+            "animationId": "shoulder_stretch"
+          },
+          {
+            "id": "tricep_stretch",
+            "name": "Tricep overhead stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each arm. Raise elbow, pull back behind head.",
+            "animationId": "tricep_stretch"
+          },
+          {
+            "id": "childs_pose",
+            "name": "Child's pose",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "Kneel, sit on heels, reach arms forward on floor. Rest spine.",
+            "animationId": "childs_pose"
+          },
+          {
+            "id": "cobra_stretch",
+            "name": "Cobra stretch",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "Lie face down, press hands to lift chest off floor. Stretches core.",
+            "animationId": "cobra_stretch"
+          },
+          {
+            "id": "wrist_circles_cooldown",
+            "name": "Wrist circles",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Rotate wrists gently, shake out arms and fingers.",
+            "animationId": "wrist_rotation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 3,
+    "title": "Day 3 — Agility & Explosiveness",
+    "theme": "Agility & Explosiveness",
+    "phase1Duration": "90 min",
+    "blocks": [
+      {
+        "id": "warmup",
+        "title": "Warm-Up",
+        "duration": 12,
+        "exercises": [
+          {
+            "id": "skip_in_place",
+            "name": "Skip in place",
+            "type": "time",
+            "targetValue": 60,
+            "animationId": "skip_in_place",
+            "notes": "Skip lightly, warming up calves and shoulders."
+          },
+          {
+            "id": "side_shuffles",
+            "name": "Side shuffles",
+            "type": "time",
+            "targetValue": 90,
+            "notes": "Shuffle 3m left and right in a low ready stance.",
+            "animationId": "side_shuffle"
+          },
+          {
+            "id": "grapevine",
+            "name": "Grapevine (Karaoke)",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Cross-step hips left and right. Warms up lateral hip agility.",
+            "animationId": "grapevine"
+          },
+          {
+            "id": "sprints_5m",
+            "name": "Forward-backward sprints",
+            "type": "reps",
+            "targetValue": 8,
+            "notes": "Sprint 5m forward, backpedal 5m back. 8 total rounds.",
+            "animationId": "sprint_backpedal"
+          },
+          {
+            "id": "hip_circles",
+            "name": "Hip circles",
+            "type": "reps",
+            "targetValue": 15,
+            "notes": "15 circles each direction. Opens up hip socket.",
+            "animationId": "hip_circle"
+          },
+          {
+            "id": "lunge_twist",
+            "name": "Dynamic lunge with twist",
+            "type": "reps",
+            "targetValue": 20,
+            "notes": "10 each side. Lunge forward, rotate torso over front knee.",
+            "animationId": "lunge_twist"
+          },
+          {
+            "id": "a_skips",
+            "name": "A-skips",
+            "type": "time",
+            "targetValue": 60,
+            "sets": 2,
+            "rest": 15,
+            "notes": "Rhythmic high knee skip, driving foot down. Builds elastic power.",
+            "animationId": "a_skip"
+          },
+          {
+            "id": "lateral_bounds_slow",
+            "name": "Lateral bounds (slow)",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "Jump side-to-side, hold landing 2 seconds. Focus on ankle control.",
+            "animationId": "lateral_bound"
+          }
+        ]
+      },
+      {
+        "id": "strength",
+        "title": "Strength — Agility & Explosiveness",
+        "duration": 30,
+        "exercises": [
+          {
+            "id": "lateral_lunges",
+            "name": "Lateral lunges",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 45,
+            "notes": "12 reps each leg. Step wide, sit hip back, explode back to center.",
+            "animationId": "lateral_lunge"
+          },
+          {
+            "id": "tuck_jumps",
+            "name": "Tuck jumps",
+            "type": "reps",
+            "targetValue": 8,
+            "sets": 4,
+            "rest": 60,
+            "animationId": "tuck_jump",
+            "notes": "Knees to chest, land softly on balls of feet. Max height."
+          },
+          {
+            "id": "broad_jumps",
+            "name": "Broad jumps",
+            "type": "reps",
+            "targetValue": 6,
+            "sets": 4,
+            "rest": 60,
+            "animationId": "broad_jump",
+            "notes": "Jump forward as far as possible, landing in stable squat posture."
+          },
+          {
+            "id": "skater_jumps",
+            "name": "Skater jumps",
+            "type": "reps",
+            "targetValue": 16,
+            "sets": 3,
+            "rest": 45,
+            "notes": "16 total. Leap side-to-side, sweep leg behind. Focus on speed.",
+            "animationId": "skater_jump"
+          },
+          {
+            "id": "split_squat_jumps",
+            "name": "Split squat jumps",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 60,
+            "notes": "10 total reps. Jump from lunge position and swap legs in mid-air.",
+            "animationId": "split_jump"
+          },
+          {
+            "id": "quick_feet",
+            "name": "Quick feet",
+            "type": "time",
+            "targetValue": 20,
+            "sets": 4,
+            "rest": 30,
+            "animationId": "quick_feet",
+            "notes": "Patter feet in place as fast as possible. Stay low in athletic stance."
+          },
+          {
+            "id": "depth_drops",
+            "name": "Depth drop to jump",
+            "type": "reps",
+            "targetValue": 6,
+            "sets": 3,
+            "rest": 60,
+            "animationId": "depth_drop",
+            "notes": "Step off step (30cm), land softly, immediately explode up max height."
+          },
+          {
+            "id": "single_leg_hops_fwd",
+            "name": "Single-leg hops (forward)",
+            "type": "reps",
+            "targetValue": 8,
+            "sets": 3,
+            "rest": 45,
+            "notes": "8 hops each leg. Continuous forward hopping. Builds ankle reactive force.",
+            "animationId": "single_leg_hop"
+          },
+          {
+            "id": "shuffle_to_sprint",
+            "name": "Lateral shuffle to sprint",
+            "type": "reps",
+            "targetValue": 6,
+            "sets": 3,
+            "rest": 45,
+            "animationId": "shuffle_sprint",
+            "notes": "Shuffle 3m, then plant and sprint 5m forward. Simulates ball pursuit."
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Balance & Stability",
+        "duration": 8,
+        "exercises": [
+          {
+            "id": "single_leg_hop_fwd_back",
+            "name": "Single-leg hop (forward/back)",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Hop forward and back over a line on one foot.",
+            "animationId": "single_leg_hop_line_fwd"
+          },
+          {
+            "id": "single_leg_hop_side",
+            "name": "Single-leg hop (side-to-side)",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Hop side-to-side on one foot. Builds stabilizers.",
+            "animationId": "single_leg_hop_line_side"
+          },
+          {
+            "id": "eyes_closed_head_turns",
+            "name": "Eyes-closed stand with head turns",
+            "type": "time",
+            "targetValue": 25,
+            "notes": "25s each leg. Balance on one foot, close eyes, rotate head slowly.",
+            "animationId": "single_leg_stand"
+          },
+          {
+            "id": "single_leg_squat_toe",
+            "name": "Single-leg squat to toe touch",
+            "type": "reps",
+            "targetValue": 6,
+            "notes": "6 reps each leg. Squat on one leg, reach forward and touch toe.",
+            "animationId": "single_leg_squat_touch"
+          },
+          {
+            "id": "reactive_single_leg_catch",
+            "name": "Reactive single-leg catch",
+            "type": "reps",
+            "targetValue": 8,
+            "notes": "8 reps each leg. Toss ball up, jump and land on one foot, holding catch.",
+            "animationId": "single_leg_catch"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Wall Skills Block",
+        "duration": 35,
+        "exercises": [
+          {
+            "id": "fast_wall_rally",
+            "name": "Fast-Paced Wall Rally",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Rally forearm passes fast. Close distance (1.5m), keep hands moving.",
+                "goal": "Goal: 15 consecutive fast passes",
+                "wallDistance": 1.5,
+                "animationId": "fast_rally_l1"
+              },
+              "2": {
+                "notes": "Vary distance. Move closer, then further back during fast rally.",
+                "goal": "Goal: 20 continuous rally passes",
+                "wallDistance": 1.8,
+                "animationId": "fast_rally_l2"
+              },
+              "3": {
+                "notes": "Alternate shuffle rally. Rally fast while moving left and right.",
+                "goal": "Goal: 15 fast moving passes",
+                "wallDistance": 1.8,
+                "animationId": "fast_rally_l3"
+              }
+            }
+          },
+          {
+            "id": "hard_hit_dig",
+            "name": "Hard-Hit Wall Dig",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss, hit wall hard, dig rebound. Low stance, lock platform.",
+                "goal": "Goal: 8 clean digs",
+                "wallDistance": 3.0,
+                "animationId": "hard_dig_l1"
+              },
+              "2": {
+                "notes": "Stand 4m back. Hitter swing simulation. Read bounce, react low.",
+                "goal": "Goal: 10 clean digs from 4m",
+                "wallDistance": 4.0,
+                "animationId": "hard_dig_l2"
+              },
+              "3": {
+                "notes": "Continuous spike-dig. Hit, dig, self-set, hit again immediately.",
+                "goal": "Goal: 5 consecutive self-spikes",
+                "wallDistance": 3.0,
+                "animationId": "hard_dig_l3"
+              }
+            }
+          },
+          {
+            "id": "quick_sets",
+            "name": "Quick Sets (Low & Fast)",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Low, rapid set rally against wall. Flat arc. Fingertip wrist snaps.",
+                "goal": "Goal: 10 fast sets",
+                "wallDistance": 1.2,
+                "animationId": "quick_set_l1"
+              },
+              "2": {
+                "notes": "Quick sets while dropping into partial squat and rising up.",
+                "goal": "Goal: 12 vertical-shift sets",
+                "wallDistance": 1.3,
+                "animationId": "quick_set_l2"
+              },
+              "3": {
+                "notes": "Quick sets to moving targets. Small shuffles left/right.",
+                "goal": "Goal: 15 quick shifting sets",
+                "wallDistance": 1.3,
+                "animationId": "quick_set_l3"
+              }
+            }
+          },
+          {
+            "id": "pass_set_combo",
+            "name": "Pass-then-Set Combo",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Forearm pass to wall, set the return. Alternate pass/set every touch.",
+                "goal": "Goal: 6 consecutive combo sets",
+                "wallDistance": 2.0,
+                "animationId": "pass_set_combo_l1"
+              },
+              "2": {
+                "notes": "Increase rhythm speed. Stand closer. Fast hand transitions.",
+                "goal": "Goal: 10 combo sequences",
+                "wallDistance": 1.8,
+                "animationId": "pass_set_combo_l2"
+              },
+              "3": {
+                "notes": "Dig, set, head-snap (look away), and set backward to wall.",
+                "goal": "Goal: 5 advanced sequences",
+                "wallDistance": 2.0,
+                "animationId": "pass_set_combo_l3"
+              }
+            }
+          },
+          {
+            "id": "approach_jump_hit_wall",
+            "name": "Approach + Jump + Wall Hit",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss ball, approach, jump, and hit against wall. Land softly.",
+                "goal": "Goal: 5 clean jump hits over 3m",
+                "wallDistance": 3.0,
+                "animationId": "jump_hit_l1"
+              },
+              "2": {
+                "notes": "Add hitting angle variety. Aim for deep or short spots.",
+                "goal": "Goal: 8 directed jump hits",
+                "wallDistance": 3.0,
+                "animationId": "jump_hit_l2"
+              },
+              "3": {
+                "notes": "Self-set approach. Set ball high, transition back, approach, spike.",
+                "goal": "Goal: 5 clean self-spikes",
+                "wallDistance": 3.5,
+                "animationId": "jump_hit_l3"
+              }
+            }
+          },
+          {
+            "id": "directed_wall_attacks",
+            "name": "Directed Wall Attacks",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Standing attacks to left/right wall targets. Focus on wrist snap direction.",
+                "goal": "Goal: 10 targeted standing hits",
+                "wallDistance": 2.5,
+                "animationId": "directed_attack_l1"
+              },
+              "2": {
+                "notes": "Approach steps (no jump) hitting targets. Timing arm snap.",
+                "goal": "Goal: 8 approach target hits",
+                "wallDistance": 2.8,
+                "animationId": "directed_attack_l2"
+              },
+              "3": {
+                "notes": "Jump attack to targets. Jump and aim for left/right marks.",
+                "goal": "Goal: 6 targeted jump hits",
+                "wallDistance": 3.0,
+                "animationId": "directed_attack_l3"
+              }
+            }
+          },
+          {
+            "id": "rapid_angle_reads",
+            "name": "Rapid Angle Reads",
+            "type": "time",
+            "targetValue": 180,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss ball hard at wall angles. Read bounce instantly, pre-position body.",
+                "goal": "Goal: Rapid visual tracking",
+                "wallDistance": 2.5,
+                "animationId": "angle_read_l1"
+              },
+              "2": {
+                "notes": "Catch ball behind back or between legs after bounce to test speed.",
+                "goal": "Goal: 8 trick catches",
+                "wallDistance": 2.5,
+                "animationId": "angle_read_l2"
+              },
+              "3": {
+                "notes": "React with immediate dig platform. Drop hips instantly to ball.",
+                "goal": "Goal: 8 low digs from random angles",
+                "wallDistance": 3.0,
+                "animationId": "angle_read_l3"
+              }
+            }
+          },
+          {
+            "id": "peripheral_movement_shuffle",
+            "name": "Peripheral + Movement Combo",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Perform shuffle steps while tracking ball in periphery. Dual-task.",
+                "goal": "Goal: Maintain gaze, keep feet moving",
+                "animationId": "peripheral_shuffle_l1"
+              },
+              "2": {
+                "notes": "Self-sets in peripheral vision while shuffling left/right.",
+                "goal": "Goal: 10 sets on shuffle",
+                "animationId": "peripheral_shuffle_l2"
+              },
+              "3": {
+                "notes": "Alternate digs and sets in peripheral vision while shuffling.",
+                "goal": "Goal: 8 combos on shuffle",
+                "animationId": "peripheral_shuffle_l3"
+              }
+            }
+          },
+          {
+            "id": "body_language_reading",
+            "name": "Body Language Reading",
+            "type": "time",
+            "targetValue": 120,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Shadow your own attack approach in front of wall mirror/reflection.",
+                "goal": "Goal: Analyze shoulder and arm cues",
+                "animationId": "body_read_l1"
+              },
+              "2": {
+                "notes": "Practice hiding your hit. Approach, show hard hit, roll ball softly.",
+                "goal": "Goal: 8 successful roll shadows",
+                "animationId": "body_read_l2"
+              },
+              "3": {
+                "notes": "Show spike, set backward at last millisecond. Advanced deception.",
+                "goal": "Goal: 6 dump/set shadows",
+                "animationId": "body_read_l3"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cooldown",
+        "title": "Cool-Down & Stretch",
+        "duration": 5,
+        "exercises": [
+          {
+            "id": "pigeon_stretch",
+            "name": "Pigeon stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each leg. Opens hips and glutes after jumping.",
+            "animationId": "pigeon_stretch"
+          },
+          {
+            "id": "seated_forward_fold",
+            "name": "Seated forward fold",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "Sit, legs straight, reach forward to stretch hamstrings and back.",
+            "animationId": "forward_fold"
+          },
+          {
+            "id": "cat_cow",
+            "name": "Cat-cow stretches",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "Alternate arching and rounding back on all fours. Mobilizes spine.",
+            "animationId": "cat_cow"
+          },
+          {
+            "id": "neck_stretches",
+            "name": "Neck stretch sequence",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Rotate and tilt head. Loosens neck muscles for visual tracking.",
+            "animationId": "neck_rotation"
+          },
+          {
+            "id": "deep_breathing3",
+            "name": "Deep breathing",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Relax body, slow deep breathing to conclude session.",
+            "animationId": "deep_breathing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 4,
+    "title": "Day 4 — Full Body Circuit",
+    "theme": "Full Body Circuit",
+    "phase1Duration": "90 min",
+    "blocks": [
+      {
+        "id": "warmup",
+        "title": "Warm-Up",
+        "duration": 12,
+        "exercises": [
+          {
+            "id": "jog_direction",
+            "name": "Light jog with direction changes",
+            "type": "time",
+            "targetValue": 120,
+            "animationId": "jog_in_place",
+            "notes": "Jog in place, turning 90 degrees every 15 seconds."
+          },
+          {
+            "id": "high_knee_skips",
+            "name": "High knee skips",
+            "type": "time",
+            "targetValue": 60,
+            "sets": 2,
+            "rest": 15,
+            "notes": "Skip forward and back, lifting knees high to chest.",
+            "animationId": "skip_in_place"
+          },
+          {
+            "id": "arm_wrist_rotations",
+            "name": "Arm circles + wrist rotations",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Simultaneous arm swings and wrist rotations.",
+            "animationId": "arm_circles"
+          },
+          {
+            "id": "good_mornings",
+            "name": "Bodyweight good mornings",
+            "type": "reps",
+            "targetValue": 12,
+            "notes": "Hands behind head, hinge hips back. Stretches hamstrings.",
+            "animationId": "good_morning"
+          },
+          {
+            "id": "worlds_greatest",
+            "name": "World's greatest stretch",
+            "type": "reps",
+            "targetValue": 12,
+            "notes": "6 each side. Deep lunge with rotation, elbow to ankle.",
+            "animationId": "worlds_greatest_stretch"
+          },
+          {
+            "id": "vertical_jumps_50",
+            "name": "Vertical jumps (50% effort)",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "Light vertical jumps focusing on clean landing mechanics.",
+            "animationId": "jump_squat"
+          },
+          {
+            "id": "inchworm_pushup",
+            "name": "Inchworms with push-up",
+            "type": "reps",
+            "targetValue": 6,
+            "notes": "Inchworm walkout + 1 push-up at the bottom of plank. 6 reps.",
+            "animationId": "inchworm"
+          },
+          {
+            "id": "lateral_lunges_dynamic",
+            "name": "Lateral lunges (dynamic)",
+            "type": "reps",
+            "targetValue": 16,
+            "notes": "8 reps each side. Alternate lateral lunges with fluid transitions.",
+            "animationId": "lateral_lunge"
+          }
+        ]
+      },
+      {
+        "id": "strength",
+        "title": "Strength — Full Body Circuit",
+        "duration": 30,
+        "exercises": [
+          {
+            "id": "burpees",
+            "name": "Burpees",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. Complete full push-up and explosive jump at top.",
+            "animationId": "burpee"
+          },
+          {
+            "id": "squat_overhead_press",
+            "name": "Squat to overhead press",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. Hold volleyball, deep squat → press ball overhead.",
+            "animationId": "squat_press"
+          },
+          {
+            "id": "mountain_climbers",
+            "name": "Mountain climbers",
+            "type": "reps",
+            "targetValue": 24,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. 24 reps total. Keep hips low, drive knees fast.",
+            "animationId": "mountain_climbers"
+          },
+          {
+            "id": "reverse_lunges_circuit",
+            "name": "Reverse lunges",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. 12 reps each leg. Drive through front heel.",
+            "animationId": "reverse_lunge"
+          },
+          {
+            "id": "pushups_rotation",
+            "name": "Push-ups with rotation",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. Push-up then rotate into side plank, alternate sides.",
+            "animationId": "pushup_rotation"
+          },
+          {
+            "id": "star_jumps",
+            "name": "Star jumps",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 3,
+            "rest": 90,
+            "notes": "Part of Circuit A. Explode in air, spread arms and legs. Land soft.",
+            "animationId": "star_jump"
+          },
+          {
+            "id": "squat_jumps_circuit",
+            "name": "Squat jumps (max height)",
+            "type": "reps",
+            "targetValue": 10,
+            "sets": 2,
+            "rest": 60,
+            "notes": "Part of Circuit B. Rest 60s. Maximum vertical jump height.",
+            "animationId": "jump_squat"
+          },
+          {
+            "id": "plank_shoulder_taps_circuit",
+            "name": "Plank shoulder taps",
+            "type": "reps",
+            "targetValue": 16,
+            "sets": 2,
+            "rest": 60,
+            "notes": "Part of Circuit B. 16 reps total. Controlled tapping, hips stable.",
+            "animationId": "shoulder_taps"
+          },
+          {
+            "id": "glute_bridges_circuit",
+            "name": "Glute bridges (both legs)",
+            "type": "reps",
+            "targetValue": 15,
+            "sets": 2,
+            "rest": 60,
+            "notes": "Part of Circuit B. Double leg bridge, squeeze glutes at peak.",
+            "animationId": "glute_bridge"
+          },
+          {
+            "id": "tricep_dips",
+            "name": "Tricep dips",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 2,
+            "rest": 60,
+            "notes": "Part of Circuit B. Perform on step/chair. Deep dip, chest open.",
+            "animationId": "tricep_dips"
+          },
+          {
+            "id": "leg_raises",
+            "name": "Leg raises",
+            "type": "reps",
+            "targetValue": 12,
+            "sets": 2,
+            "rest": 60,
+            "notes": "Part of Circuit B. Lie on back, lower legs. Keep back flat on floor.",
+            "animationId": "leg_raises"
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Balance & Stability",
+        "duration": 8,
+        "exercises": [
+          {
+            "id": "single_leg_deadlift_vb",
+            "name": "Single-leg deadlift with volleyball",
+            "type": "reps",
+            "targetValue": 10,
+            "notes": "10 reps each leg. Hinge hips, reach volleyball down, maintain line.",
+            "animationId": "single_leg_deadlift"
+          },
+          {
+            "id": "towel_balance",
+            "name": "Balance on unstable surface",
+            "type": "time",
+            "targetValue": 35,
+            "notes": "35s each leg. Fold a towel and balance on it. Sharpens stabilizers.",
+            "animationId": "single_leg_stand"
+          },
+          {
+            "id": "heel_toe_walk_closed",
+            "name": "Heel-to-toe walk (eyes closed)",
+            "type": "reps",
+            "targetValue": 24,
+            "notes": "12 steps forward, 12 steps back. Walk straight line slowly.",
+            "animationId": "tandem_walk"
+          },
+          {
+            "id": "single_leg_wall_sit",
+            "name": "Single-leg wall sit",
+            "type": "time",
+            "targetValue": 15,
+            "showWall": true,
+            "wallDistance": 0.5,
+            "notes": "15s each leg. Thighs parallel to floor, elevate one foot slightly.",
+            "animationId": "wall_sit"
+          },
+          {
+            "id": "single_leg_self_set",
+            "name": "Balance + volleyball self-set",
+            "type": "reps",
+            "targetValue": 8,
+            "notes": "8 sets each leg. Stand on one foot, set volleyball to self repeatedly.",
+            "animationId": "single_leg_set"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Wall Skills Block",
+        "duration": 35,
+        "exercises": [
+          {
+            "id": "distance_forearm_pass",
+            "name": "Distance Forearm Passing (4–5 m)",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Stand 4m back from wall. Forearm pass. Demands more platform power.",
+                "goal": "Goal: 8 consecutive distance passes",
+                "wallDistance": 4.0,
+                "animationId": "forearm_pass_dist_l1"
+              },
+              "2": {
+                "notes": "Stand 5m back from wall. Keep knees low, follow through with legs.",
+                "goal": "Goal: 12 consecutive distance passes",
+                "wallDistance": 5.0,
+                "animationId": "forearm_pass_dist_l2"
+              },
+              "3": {
+                "notes": "Distance passes with movement. Alternating left/right shuffle.",
+                "goal": "Goal: 10 moving distance passes",
+                "wallDistance": 5.0,
+                "animationId": "forearm_pass_dist_l3"
+              }
+            }
+          },
+          {
+            "id": "alternating_pass_set",
+            "name": "Alternating Forearm/Overhead Combo",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Alternate forearm and overhead passes. Continuous. Adjust foot stance.",
+                "goal": "Goal: 8 alternating combos",
+                "wallDistance": 2.0,
+                "animationId": "low_high_l1"
+              },
+              "2": {
+                "notes": "Speed up the alternating. Stand slightly closer (1.8m). Fast hands.",
+                "goal": "Goal: 12 alternating combos",
+                "wallDistance": 1.8,
+                "animationId": "low_high_l2"
+              },
+              "3": {
+                "notes": "Deep forearm pass → quick overhead set → back-set. High control.",
+                "goal": "Goal: 6 advanced combos",
+                "wallDistance": 2.2,
+                "animationId": "low_high_l3"
+              }
+            }
+          },
+          {
+            "id": "kneeling_sets",
+            "name": "Kneeling Sets",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Kneel on floor and set against wall at 1.5m. Isolates fingers/wrists.",
+                "goal": "Goal: 15 consecutive kneeling sets",
+                "wallDistance": 1.5,
+                "animationId": "kneeling_set_l1"
+              },
+              "2": {
+                "notes": "Kneeling sets to target box on wall. Develop finger accuracy.",
+                "goal": "Goal: 10 target hits",
+                "wallDistance": 1.6,
+                "animationId": "kneeling_set_l2"
+              },
+              "3": {
+                "notes": "Kneeling quick sets. Fast, low bounce sets, no pause.",
+                "goal": "Goal: 15 quick kneeling sets",
+                "wallDistance": 1.3,
+                "animationId": "kneeling_set_l3"
+              }
+            }
+          },
+          {
+            "id": "back_set_practice",
+            "name": "Back-Set Practice",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Face away from wall. Set backward over head to wall. Turn and receive.",
+                "goal": "Goal: 6 clean back-set touches",
+                "wallDistance": 2.0,
+                "animationId": "back_set_l1"
+              },
+              "2": {
+                "notes": "Continuous back-setting. Set backward, bounce off wall, back-set again.",
+                "goal": "Goal: 5 consecutive back-sets",
+                "wallDistance": 1.8,
+                "animationId": "back_set_l2"
+              },
+              "3": {
+                "notes": "Back-set to specific wall target. Focus on arching back.",
+                "goal": "Goal: 5 targeted back-sets",
+                "wallDistance": 2.0,
+                "animationId": "back_set_l3"
+              }
+            }
+          },
+          {
+            "id": "wall_hit_max_power",
+            "name": "Wall Hit — Max Power",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Self-toss, hit wall as HARD as possible. Full rotation hips to wrist.",
+                "goal": "Goal: 8 high-velocity hits",
+                "wallDistance": 3.0,
+                "animationId": "power_hit_l1"
+              },
+              "2": {
+                "notes": "Toss high, approach steps, hit wall at max force (no jump).",
+                "goal": "Goal: 10 approach power hits",
+                "wallDistance": 3.2,
+                "animationId": "power_hit_l2"
+              },
+              "3": {
+                "notes": "Jump hit max power. Full approach, vertical leap, max arm speed.",
+                "goal": "Goal: 5 max-power jump spikes",
+                "wallDistance": 3.5,
+                "animationId": "power_hit_l3"
+              }
+            }
+          },
+          {
+            "id": "continuous_attack_rally",
+            "name": "Continuous Wall Attack Rally",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Hit wall, let it bounce once on floor, hit again. Keep rhythm going.",
+                "goal": "Goal: 5 consecutive rally hits",
+                "wallDistance": 2.5,
+                "animationId": "attack_rally_l1"
+              },
+              "2": {
+                "notes": "Vary stance. Alternate between hitting left and right hands (snaps).",
+                "goal": "Goal: 8 continuous rally hits",
+                "wallDistance": 2.5,
+                "animationId": "attack_rally_l2"
+              },
+              "3": {
+                "notes": "No bounce rally. Volley hits against wall continuously (arm swing only).",
+                "goal": "Goal: 8 direct wall hits without bounce",
+                "wallDistance": 2.0,
+                "animationId": "attack_rally_l3"
+              }
+            }
+          },
+          {
+            "id": "reaction_ball_bounce",
+            "name": "Reaction Ball Drill",
+            "type": "time",
+            "targetValue": 180,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Throw volleyball at floor angle so it hits wall unpredictably. Catch.",
+                "goal": "Goal: Sharp reaction catch",
+                "wallDistance": 2.2,
+                "animationId": "angle_read_l1"
+              },
+              "2": {
+                "notes": "Catch with single hand only. Alternate left and right hand catches.",
+                "goal": "Goal: 8 single-hand catches",
+                "wallDistance": 2.2,
+                "animationId": "angle_read_l2"
+              },
+              "3": {
+                "notes": "React with low dig platform. Digest the bounce off the wall.",
+                "goal": "Goal: 8 quick reflex digs",
+                "wallDistance": 2.5,
+                "animationId": "angle_read_l3"
+              }
+            }
+          },
+          {
+            "id": "dual_task_tracking",
+            "name": "Dual-Task Tracking",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Balance on one foot, pass ball hand-to-hand. Look at wall mark.",
+                "goal": "Goal: Balance, track fixed point",
+                "animationId": "peripheral_l1"
+              },
+              "2": {
+                "notes": "Balance on one foot, self-set. Gaze fixed on wall mark.",
+                "goal": "Goal: 8 self-sets on one foot",
+                "wallDistance": null,
+                "animationId": "peripheral_l2"
+              },
+              "3": {
+                "notes": "Single-leg squat while passing ball hand-to-hand. Eyes fixed.",
+                "goal": "Goal: 6 squat passes",
+                "animationId": "peripheral_l3"
+              }
+            }
+          },
+          {
+            "id": "visualization_detailed",
+            "name": "Detailed Visualization",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Eyes closed. Play a full set mentally. See contacts and movements.",
+                "goal": "Goal: Clear mental imagery",
+                "animationId": "eyes_closed_l1"
+              },
+              "2": {
+                "notes": "Visualize recovering from error. See yourself correcting form.",
+                "goal": "Goal: Confident recovery imagery",
+                "animationId": "eyes_closed_l2"
+              },
+              "3": {
+                "notes": "Visualize opponent attacks. See yourself blocking and digging them.",
+                "goal": "Goal: Reactive defensive imagery",
+                "animationId": "eyes_closed_l3"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cooldown",
+        "title": "Cool-Down & Stretch",
+        "duration": 5,
+        "exercises": [
+          {
+            "id": "figure_four",
+            "name": "Figure-four stretch",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each leg. Cross ankle over knee, sit back to stretch glutes.",
+            "animationId": "glute_stretch"
+          },
+          {
+            "id": "chest_stretch",
+            "name": "Chest stretch at wall corner",
+            "type": "time",
+            "targetValue": 60,
+            "showWall": true,
+            "wallDistance": 0.2,
+            "notes": "30s each side. Forearm on wall, turn chest away. Relieves shoulders.",
+            "animationId": "chest_stretch_wall"
+          },
+          {
+            "id": "seated_twist",
+            "name": "Seated spinal twist",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "30s each side. Twist torso to look behind you, knee hugged.",
+            "animationId": "seated_twist"
+          },
+          {
+            "id": "forearm_stretch_day4",
+            "name": "Forearm stretch",
+            "type": "time",
+            "targetValue": 40,
+            "notes": "20s each arm. Press fingers down and back, stretching wrists.",
+            "animationId": "wrist_stretch"
+          },
+          {
+            "id": "deep_breathing_day4",
+            "name": "Deep breathing",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Slow breaths, focus on total muscle relaxation.",
+            "animationId": "deep_breathing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "dayNumber": 5,
+    "title": "Day 5 — Game-Speed Conditioning",
+    "theme": "Game-Speed Conditioning",
+    "phase1Duration": "90 min",
+    "blocks": [
+      {
+        "id": "warmup",
+        "title": "Warm-Up",
+        "duration": 12,
+        "exercises": [
+          {
+            "id": "jog_direction_speed",
+            "name": "Jog with direction changes",
+            "type": "time",
+            "targetValue": 120,
+            "animationId": "jog_in_place",
+            "notes": "Warm up ankles, shift directions every 10 seconds."
+          },
+          {
+            "id": "stretch_flow",
+            "name": "Dynamic stretch flow",
+            "type": "time",
+            "targetValue": 180,
+            "notes": "Continuous movement flowing from quad stretch to arm circles.",
+            "animationId": "jumping_jacks"
+          },
+          {
+            "id": "defensive_shuffles",
+            "name": "Defensive shuffles",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Stay low in defensive posture, shuffle rapidly left and right.",
+            "animationId": "side_shuffle"
+          },
+          {
+            "id": "vertical_jumps_75",
+            "name": "Vertical jumps (75% effort)",
+            "type": "reps",
+            "targetValue": 12,
+            "notes": "Higher jumps, snap arms up, land in deep athletic stance.",
+            "animationId": "jump_squat"
+          },
+          {
+            "id": "approach_footwork_day5",
+            "name": "Approach footwork",
+            "type": "reps",
+            "targetValue": 12,
+            "notes": "12 reps. Explosive L-R-L step closing. Practice arm swing draw.",
+            "animationId": "approach_footwork"
+          },
+          {
+            "id": "reaction_hops",
+            "name": "Reaction hops",
+            "type": "time",
+            "targetValue": 90,
+            "notes": "Quick hops in random directions, react to imaginary cues.",
+            "animationId": "single_leg_hop"
+          },
+          {
+            "id": "sprint_in_place",
+            "name": "Sprint in place",
+            "type": "time",
+            "targetValue": 30,
+            "notes": "Max effort 30s sprint in place. Pump arms fast.",
+            "animationId": "quick_feet"
+          }
+        ]
+      },
+      {
+        "id": "strength",
+        "title": "Strength — Game-Speed Intervals",
+        "duration": 25,
+        "exercises": [
+          {
+            "id": "interval_jump_squats",
+            "name": "Jump squats (Interval A)",
+            "type": "time",
+            "targetValue": 40,
+            "sets": 3,
+            "rest": 15,
+            "notes": "40s work / 15s rest. Maximum height on each jump. Explode.",
+            "animationId": "jump_squat"
+          },
+          {
+            "id": "interval_fast_pushups",
+            "name": "Push-ups (Interval A)",
+            "type": "time",
+            "targetValue": 40,
+            "sets": 3,
+            "rest": 15,
+            "notes": "40s work / 15s rest. Fast, explosive push off floor.",
+            "animationId": "pushup"
+          },
+          {
+            "id": "interval_lateral_shuffles",
+            "name": "Lateral shuffles (Interval A)",
+            "type": "time",
+            "targetValue": 40,
+            "sets": 3,
+            "rest": 15,
+            "notes": "40s work / 15s rest. Shuffle 3m, touch floor at each end.",
+            "animationId": "side_shuffle"
+          },
+          {
+            "id": "interval_block_jumps",
+            "name": "Block jumps (Interval A)",
+            "type": "time",
+            "targetValue": 40,
+            "sets": 3,
+            "rest": 15,
+            "notes": "40s work / 15s rest. Simulate blocking, reach hands high.",
+            "animationId": "block_jump"
+          },
+          {
+            "id": "interval_mountain_climbers",
+            "name": "Mountain climbers (Interval A)",
+            "type": "time",
+            "targetValue": 40,
+            "sets": 3,
+            "rest": 15,
+            "notes": "40s work / 15s rest. Maximum knee drive speed.",
+            "animationId": "mountain_climbers"
+          },
+          {
+            "id": "interval_burpees",
+            "name": "Burpees (Interval B)",
+            "type": "time",
+            "targetValue": 30,
+            "sets": 2,
+            "rest": 10,
+            "notes": "30s work / 10s rest. Full extension + jump. Fast tempo.",
+            "animationId": "burpee"
+          },
+          {
+            "id": "interval_plank_shoulder_taps",
+            "name": "Plank shoulder taps (Interval B)",
+            "type": "time",
+            "targetValue": 30,
+            "sets": 2,
+            "rest": 10,
+            "notes": "30s work / 10s rest. Tap shoulders fast, keep hips steady.",
+            "animationId": "shoulder_taps"
+          },
+          {
+            "id": "interval_tuck_jumps",
+            "name": "Tuck jumps (Interval B)",
+            "type": "time",
+            "targetValue": 30,
+            "sets": 2,
+            "rest": 10,
+            "notes": "30s work / 10s rest. Knees to chest, land soft, repeat fast.",
+            "animationId": "tuck_jump"
+          },
+          {
+            "id": "interval_quick_feet",
+            "name": "Quick feet (Interval B)",
+            "type": "time",
+            "targetValue": 30,
+            "sets": 2,
+            "rest": 10,
+            "notes": "30s work / 10s rest. Patter feet in place as fast as possible.",
+            "animationId": "quick_feet"
+          },
+          {
+            "id": "interval_superman_hold",
+            "name": "Superman hold (Interval B)",
+            "type": "time",
+            "targetValue": 30,
+            "sets": 2,
+            "rest": 10,
+            "notes": "30s work / 10s rest. Static back extension, squeeze glutes.",
+            "animationId": "superman_hold"
+          }
+        ]
+      },
+      {
+        "id": "balance",
+        "title": "Balance & Stability",
+        "duration": 8,
+        "exercises": [
+          {
+            "id": "single_leg_ball_tosses",
+            "name": "Single-leg ball tosses",
+            "type": "reps",
+            "targetValue": 24,
+            "notes": "12 reps each leg. Toss ball hand-to-hand while balancing on one foot.",
+            "animationId": "single_leg_toss"
+          },
+          {
+            "id": "reactive_balance_wall",
+            "name": "Reactive balance wall toss",
+            "type": "reps",
+            "targetValue": 24,
+            "showWall": true,
+            "wallDistance": 1.5,
+            "notes": "12 reps each leg. Stand on one foot, toss at wall, catch rebound.",
+            "animationId": "single_leg_catch"
+          },
+          {
+            "id": "eyes_closed_stand_arm",
+            "name": "Eyes-closed stand with arm movements",
+            "type": "time",
+            "targetValue": 40,
+            "notes": "20s each leg. Stand on one leg, eyes closed, move arms in circles.",
+            "animationId": "single_leg_stand"
+          },
+          {
+            "id": "single_leg_hop_stick",
+            "name": "Single-leg hop + stick",
+            "type": "reps",
+            "targetValue": 16,
+            "notes": "8 reps each leg. Hop in random directions (fwd/side), hold landing.",
+            "animationId": "single_leg_hop"
+          },
+          {
+            "id": "balance_overhead_set",
+            "name": "Balance + overhead set to self",
+            "type": "reps",
+            "targetValue": 16,
+            "notes": "8 sets each leg. Stand on one foot, set volleyball straight up.",
+            "animationId": "single_leg_set"
+          }
+        ]
+      },
+      {
+        "id": "skills",
+        "title": "Wall Skills Block",
+        "duration": 40,
+        "exercises": [
+          {
+            "id": "game_speed_rally",
+            "name": "Game-Speed Wall Rally",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Forearm pass rally at max speed. Count consecutive passes.",
+                "goal": "Goal: 15 consecutive game-speed passes",
+                "wallDistance": 1.8,
+                "animationId": "fast_rally_l1"
+              },
+              "2": {
+                "notes": "Move while passing fast. Shuffle side-to-side. Keep platform solid.",
+                "goal": "Goal: 20 consecutive moving passes",
+                "wallDistance": 2.0,
+                "animationId": "fast_rally_l2"
+              },
+              "3": {
+                "notes": "Alternating digs and passes at max speed. React low and high.",
+                "goal": "Goal: 15 fast alternating digs/passes",
+                "wallDistance": 2.2,
+                "animationId": "fast_rally_l3"
+              }
+            }
+          },
+          {
+            "id": "defensive_sim_digs",
+            "name": "Defensive Simulation Digs",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Hit hard at wall, dig return, recover stance, repeat.",
+                "goal": "Goal: 8 clean defensive digs",
+                "wallDistance": 3.0,
+                "animationId": "hard_dig_l1"
+              },
+              "2": {
+                "notes": "Hit from wider angles. Sprint to save bad rebounds. Low ready stance.",
+                "goal": "Goal: 10 clean digs under pressure",
+                "wallDistance": 3.2,
+                "animationId": "hard_dig_l2"
+              },
+              "3": {
+                "notes": "Continuous digs: hit, dig, self-set, hit again. No catching.",
+                "goal": "Goal: 6 consecutive self-spike-digs",
+                "wallDistance": 3.0,
+                "animationId": "hard_dig_l3"
+              }
+            }
+          },
+          {
+            "id": "transition_setting",
+            "name": "Transition Setting",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Forearm pass to wall → set the return → forearm pass next. Alternating.",
+                "goal": "Goal: 8 alternating touches",
+                "wallDistance": 2.0,
+                "animationId": "pass_set_combo_l1"
+              },
+              "2": {
+                "notes": "Accelerate transitions. Stand closer. Fast hand/platform shifts.",
+                "goal": "Goal: 12 alternating touches",
+                "wallDistance": 1.8,
+                "animationId": "pass_set_combo_l2"
+              },
+              "3": {
+                "notes": "Forearm pass → jump set → back-set to wall. Advanced transitions.",
+                "goal": "Goal: 6 clean advanced sequences",
+                "wallDistance": 2.0,
+                "animationId": "pass_set_combo_l3"
+              }
+            }
+          },
+          {
+            "id": "quick_set_target",
+            "name": "Quick-Set to Target",
+            "type": "time",
+            "targetValue": 240,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Low, fast sets aiming at specific wall spots. Quick wrist push.",
+                "goal": "Goal: 10 target hits",
+                "wallDistance": 1.3,
+                "animationId": "quick_set_l1"
+              },
+              "2": {
+                "notes": "Quick sets to left/right target marks, quick shifting between.",
+                "goal": "Goal: 12 shifting sets",
+                "wallDistance": 1.3,
+                "animationId": "quick_set_l2"
+              },
+              "3": {
+                "notes": "Kneeling quick sets to targets. Finger control only.",
+                "goal": "Goal: 10 kneeling target quick sets",
+                "wallDistance": 1.2,
+                "animationId": "quick_set_l3"
+              }
+            }
+          },
+          {
+            "id": "full_attack_seq_wall",
+            "name": "Full Attack Sequence at Wall",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Toss ball high, approach, jump, and hit wall. Reach high, snap wrist.",
+                "goal": "Goal: 15 clean jump-hits",
+                "wallDistance": 3.2,
+                "animationId": "jump_hit_l1"
+              },
+              "2": {
+                "notes": "Add directional targets. Aim for left/right wall areas.",
+                "goal": "Goal: 10 targeted jump-hits",
+                "wallDistance": 3.2,
+                "animationId": "jump_hit_l2"
+              },
+              "3": {
+                "notes": "Approach jump hit → immediately drop back to defend rebound.",
+                "goal": "Goal: 6 hit-to-defend transitions",
+                "wallDistance": 3.5,
+                "animationId": "jump_hit_l3"
+              }
+            }
+          },
+          {
+            "id": "consecutive_wall_attacks",
+            "name": "Consecutive Wall Attacks",
+            "type": "time",
+            "targetValue": 300,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Hit wall, let bounce once, hit again. Keep attack rally alive.",
+                "goal": "Goal: 6 consecutive hits",
+                "wallDistance": 2.5,
+                "animationId": "attack_rally_l1"
+              },
+              "2": {
+                "notes": "Vary swing power. Hit hard, then roll shot, then hit hard again.",
+                "goal": "Goal: 8 mixed-tempo hits",
+                "wallDistance": 2.5,
+                "animationId": "attack_rally_l2"
+              },
+              "3": {
+                "notes": "No bounce attack rally. Volley spike hits directly against wall.",
+                "goal": "Goal: 6 direct spike volleys",
+                "wallDistance": 2.2,
+                "animationId": "attack_rally_l3"
+              }
+            }
+          },
+          {
+            "id": "rapid_block_jumps_wall",
+            "name": "Rapid Block Jumps",
+            "type": "time",
+            "targetValue": 180,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Jump, land, jump immediately. Hold arms high, press over wall.",
+                "goal": "Goal: 4 sets of 5 jumps",
+                "wallDistance": 0.3,
+                "animationId": "block_jump"
+              },
+              "2": {
+                "notes": "Increase to sets of 8 jumps. Focus on quick leg loading.",
+                "goal": "Goal: 3 sets of 8 jumps",
+                "wallDistance": 0.3,
+                "animationId": "block_jump"
+              },
+              "3": {
+                "notes": "Sets of 10 rapid jumps. High tempo blocking conditioning.",
+                "goal": "Goal: 3 sets of 10 jumps",
+                "wallDistance": 0.3,
+                "animationId": "block_jump"
+              }
+            }
+          },
+          {
+            "id": "slide_block_slide",
+            "name": "Slide-Block-Slide",
+            "type": "time",
+            "targetValue": 120,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Shuffle left 2 steps → block jump → shuffle right 2 steps → block. 30s rounds.",
+                "goal": "Goal: 3 rounds (12+ blocks total)",
+                "wallDistance": 0.3,
+                "animationId": "slide_block"
+              },
+              "2": {
+                "notes": "Use crossover steps instead of shuffles for faster lateral speed.",
+                "goal": "Goal: 3 rounds (16+ blocks total)",
+                "wallDistance": 0.3,
+                "animationId": "slide_block_crossover"
+              },
+              "3": {
+                "notes": "Random side block. Shuffle, react to visual cue, block jump.",
+                "goal": "Goal: 3 rounds of reactive blocking",
+                "wallDistance": 0.3,
+                "animationId": "slide_block"
+              }
+            }
+          },
+          {
+            "id": "full_speed_read_react",
+            "name": "Full-Speed Read & React",
+            "type": "time",
+            "targetValue": 180,
+            "showWall": true,
+            "levels": {
+              "1": {
+                "notes": "Hit ball into wall at game speed. Read rebound angle, position to catch.",
+                "goal": "Goal: Smooth visual reads",
+                "wallDistance": 3.0,
+                "animationId": "angle_read_l1"
+              },
+              "2": {
+                "notes": "Dig rebound instead of catch. React low and fast.",
+                "goal": "Goal: 8 clean digs",
+                "wallDistance": 3.0,
+                "animationId": "angle_read_l2"
+              },
+              "3": {
+                "notes": "Dig rebound, self-set, and hit again. Full reactive sequence.",
+                "goal": "Goal: 6 complete play-saves",
+                "wallDistance": 3.0,
+                "animationId": "angle_read_l3"
+              }
+            }
+          },
+          {
+            "id": "peripheral_passing_combo",
+            "name": "Peripheral + Passing Combo",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Fix eyes on wall mark. Forearm pass using peripheral vision to track ball.",
+                "goal": "Goal: Maintain gaze, clean passes",
+                "animationId": "peripheral_l1"
+              },
+              "2": {
+                "notes": "Alternate forearm and overhead passes in peripheral vision.",
+                "goal": "Goal: 10 peripheral combo passes",
+                "animationId": "peripheral_l2"
+              },
+              "3": {
+                "notes": "Move left/right while passing in peripheral vision. High difficulty.",
+                "goal": "Goal: 8 moving peripheral passes",
+                "animationId": "peripheral_l3"
+              }
+            }
+          },
+          {
+            "id": "visualization_full_match",
+            "name": "Visualization — Full Match",
+            "type": "time",
+            "targetValue": 120,
+            "levels": {
+              "1": {
+                "notes": "Eyes closed. Visualize playing a full game. See, hear, and feel court.",
+                "goal": "Goal: Vivid mental movie",
+                "animationId": "eyes_closed_l1"
+              },
+              "2": {
+                "notes": "Visualize scoring the winning point. Feel the triumph and execution.",
+                "goal": "Goal: Emotional success imagery",
+                "animationId": "eyes_closed_l2"
+              },
+              "3": {
+                "notes": "Visualize locking down a block, digging, and making a perfect pass.",
+                "goal": "Goal: Full rally sequence imagery",
+                "animationId": "eyes_closed_l3"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cooldown",
+        "title": "Cool-Down & Stretch",
+        "duration": 5,
+        "exercises": [
+          {
+            "id": "full_leg_stretches",
+            "name": "Full leg stretch sequence",
+            "type": "time",
+            "targetValue": 120,
+            "notes": "Stretch quads, hamstrings, and calves. Hold each for 30 seconds.",
+            "animationId": "quad_stretch"
+          },
+          {
+            "id": "upper_body_stretches",
+            "name": "Upper body stretch sequence",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Stretch shoulders, chest, and arms. Release upper body tension.",
+            "animationId": "shoulder_stretch"
+          },
+          {
+            "id": "deep_breathing_day5",
+            "name": "Deep breathing",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Slow breathing, focus on recovery and relaxation.",
+            "animationId": "deep_breathing"
+          },
+          {
+            "id": "mental_prep",
+            "name": "Mental preparation",
+            "type": "time",
+            "targetValue": 60,
+            "notes": "Reflect on accomplishments, prepare to transition to rest days.",
+            "animationId": "eyes_closed_l1"
+          }
+        ]
+      }
+    ]
+  }
+]
